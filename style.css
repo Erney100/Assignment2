@@ -1,0 +1,70 @@
+/* Styles the entire page background and default text */
+body {
+    font-family: Arial, sans-serif;   /* Sets the main font */
+    background-color: #fdf6f9;        /* Light pink background color */
+    margin: 0;                        /* Removes default browser margin */
+}
+
+/* Styles the top header section */
+header {
+    background-color: #c7e8d0;  /* Soft green background */
+    text-align: center;         /* Centers the text */
+    padding: 20px;              /* Space inside the header */
+}
+
+/* Removes extra space above/below the main title */
+h1 {
+    margin: 0;
+}
+
+/* Styles both the intro section and the sidebar */
+.intro, aside {
+    background: white;          /* White card background */
+    margin: 20px;               /* Space outside the box */
+    padding: 20px;              /* Space inside the box */
+    border-radius: 15px;        /* Rounded corners */
+}
+
+/* Adds spacing around the restaurant section container */
+.restaurants {
+    margin: 20px;
+}
+
+/* Styles each individual restaurant box */
+.restaurant {
+    background: white;          /* White background card */
+    padding: 20px;              /* Inner spacing */
+    border-radius: 15px;        /* Rounded corners */
+    margin-bottom: 20px;        /* Space between restaurants */
+}
+
+/* Controls the layout of the food cards */
+.cards {
+    display: flex;              /* Places cards side-by-side */
+    gap: 15px;                  /* Space between cards */
+    flex-wrap: wrap;            /* Allows cards to move to next line on small screens */
+}
+
+/* Styles each food card */
+.card {
+    background: #ffeef4;        /* Light pink card color */
+    padding: 10px;              /* Inner spacing */
+    border-radius: 12px;        /* Rounded edges */
+    width: 200px;               /* Fixed card width */
+    text-align: center;         /* Centers text and images */
+}
+
+/* Styles the images inside each card */
+.card img {
+    width: 100%;                /* Makes image fill the card width */
+    max-width: 300px;           /* never bigger than 300px */
+    border-radius: 10px;        /* Slightly rounded image corners */
+}
+
+/* Styles the bottom footer section */
+footer {
+    text-align: center;         /* Centers footer text */
+    background: #c7e8d0;        /* Same soft green as header */
+    padding: 15px;              /* Inner spacing */
+    margin-top: 20px;           /* Space above the footer */
+}
