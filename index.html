@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <!-- Tells the browser this is an HTML5 document -->
+ <!--
+  Name: Jerney Whitaker
+  Date: 02/13/2026
+  CSC 372-01
+
+  This is the index.html page for my Dine On Campus project. It highlights
+  three food locations near UNCG and showcases recommended dishes for students.
+  The page uses semantic HTML and CSS styling to create a cute campus food blog.
+-->
 
 <html lang="en">
-<!-- Root of the webpage, language set to English -->
 
 <head>
     <meta charset="UTF-8">
-    <!-- Allows special characters and emojis to show correctly -->
 
     <title>Spartan Snack Guide</title>
     <!-- The title shown on the browser tab -->
 
     <link rel="stylesheet" href="style.css">
     <!-- Connects your CSS file to style the page -->
+
+    <!-- Connects external JavaScript file using defer -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -51,20 +61,20 @@
     <div class="cards">
         <!-- Holds the food item cards -->
 
-        <div class="card">
+        <div class="card" data-name="Chicken Nuggets" data-price="5.99">
             <!-- Individual food card -->
             <h3>Chicken Nuggets</h3>
             <img src="images/nuggets.jpg" alt="Chicken Nuggets">
             <p>Crispy and golden bite-sized goodness.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Waffle Fries" data-price="3.49">
             <h3>Waffle Fries</h3>
             <img src="images/fries.jpg" alt="Waffle Fries">
             <p>Salty, crunchy, and iconic.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Frosted Lemonade" data-price="4.25">
             <h3>Frosted Lemonade</h3>
             <img src="images/lemonade.jpg" alt="Frosted Lemonade">
             <p>Sweet, cold, and super refreshing.</p>
@@ -80,19 +90,19 @@
 
     <div class="cards">
 
-        <div class="card">
+        <div class="card" data-name="Orange Chicken" data-price="6.75">
             <h3>Orange Chicken</h3>
             <img src="images/orangechicken.jpg" alt="Orange Chicken">
             <p>Sweet, tangy, and crispy favorite.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Chow Mein" data-price="5.50">
             <h3>Chow Mein</h3>
             <img src="images/chowmein.jpg" alt="Chow Mein">
             <p>Classic noodles with veggies.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Honey Walnut Shrimp" data-price="7.25">
             <h3>Honey Walnut Shrimp</h3>
             <img src="images/shrimp.jpg" alt="Shrimp">
             <p>Creamy and slightly sweet.</p>
@@ -108,19 +118,19 @@
 
     <div class="cards">
 
-        <div class="card">
+        <div class="card" data-name="Pink Drink" data-price="4.95">
             <h3>Pink Drink</h3>
             <img src="images/pinkdrink.jpg" alt="Pink Drink">
             <p>Fruity, light, and aesthetic.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Caramel Frappuccino" data-price="5.75">
             <h3>Caramel Frappuccino</h3>
             <img src="images/frap.jpg" alt="Frappuccino">
             <p>Sweet blended coffee treat.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-name="Bacon Gouda Sandwich" data-price="5.25">
             <h3>Bacon Gouda Sandwich</h3>
             <img src="images/sandwich.jpg" alt="Sandwich">
             <p>Warm and filling breakfast choice.</p>
@@ -140,6 +150,13 @@
         you’re super hungry after class.
     </p>
 </aside>
+
+<!-- Favorites section added for dynamic JavaScript functionality -->
+<section id="favorites">
+    <h2>My Favorites ❤️</h2>
+    <ul id="favorites-list"></ul>
+    <p id="total">Total: $0.00</p>
+</section>
 
 </main>
 

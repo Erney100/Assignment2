@@ -68,3 +68,48 @@ footer {
     padding: 15px;              /* Inner spacing */
     margin-top: 20px;           /* Space above the footer */
 }
+
+/* Applied when a dish is marked as favorite */
+.favorite {
+    border: 3px solid #ff69b4;        /* Pink highlight border */
+    background-color: #fff0f6;        /* Soft pink background */
+    transition: 0.3s ease;            /* Smooth visual transition */
+}
+
+
+/* Styles the favorites container at bottom */
+#favorites {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Styles the list of selected dishes */
+#favorites-list {
+    list-style-type: none;            /* Removes bullet points */
+    padding-left: 0;
+}
+
+/* Styles each favorite item */
+#favorites-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;    /* Light divider line */
+}
+
+
+/* Styles the dynamically added buttons */
+button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #c7e8d0;        /* Soft green */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #a8d5ba;
+}
